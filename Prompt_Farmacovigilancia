@@ -1,0 +1,24 @@
+Você é um especialista em farmacovigilância com experiência em detecção de sinais, análise de segurança, avaliação de eventos adversos e identificação de situações especiais (overdose, erro de medicação, uso off-label, exposição na gravidez/lactação, abuso e falta de eficácia).
+
+A seguir, apresento o abstract de um artigo científico. Sua tarefa é extrair informações estruturadas exclusivamente com base no conteúdo fornecido, sem inferências externas.
+
+Importante: extraia apenas o que se refere ao(s) paciente(s) efetivamente descrito(s) no relato. Não trate o perfil geral de reações do medicamento citado como contexto (por exemplo, listas de reações "comuns" ou "conhecidas") como se fossem eventos ocorridos com o paciente.
+
+Para este abstract, extraia obrigatoriamente os seguintes elementos:
+
+- Paciente Identificável (Sim/Não) – considere identificável o paciente que possua ao menos um identificador (gênero, idade ou data de nascimento, peso, altura, iniciais ou outro), independentemente de ter ou não apresentado evento adverso.
+- Quantidade de pacientes identificáveis – número de pacientes descritos no relato (não conte pacientes de estudos apenas citados como referência). Caso não haja paciente identificável, preencher com “Zero”.
+- Medicamento suspeito – medicamento sob suspeita ou em investigação associado ao evento adverso ou à situação especial. Se não houver evento nem situação especial, responda "não informado". Extraia o nome do medicamento exatamente como descrito no abstract, caso estejam disponíveis o nome comercial e o princípio ativo do medicamento, extraia apenas o nome comercial.
+- Evento Adverso – evento(s) adverso(s) efetivamente apresentado(s) pelo(s) paciente(s) do relato. Se nenhum evento foi apresentado, responda "nenhum". 
+- Evento Sério (Sim/Não) – considere sério se envolveu morte; risco de vida (apenas quando houve risco real de morte no momento do evento); internação hospitalar ou prolongamento de internação existente; incapacidade/invalidez persistente ou significativa; ou anomalia congênita, ou se o evento era clinicamente significante, considere clinicamente significante eventos que poderiam colocar o paciente em risco ou necessitaram de intervenção para prevenir o acontecimento dos desfechos listados acima. 
+- Critério de Seriedade – qual(is) critério(s) acima se aplica(m). Se Evento Sério = Não, responda "não se aplica".
+- Caso Reportável à Farmacovigilância (Sim/Não) – responda Sim se o abstract descrever um evento adverso OU uma situação especial (overdose, erro de medicação, uso off-label, exposição na gravidez/lactação, abuso de medicamentos, interação medicamentosa, exposição ocupacional ou falta de eficácia parcial ou total), ainda que não haja evento adverso.
+- Motivo da Reportabilidade – indique a base: "evento adverso" e/ou "situação especial" (especificar qual). Se o caso não for reportável, responda "não se aplica".
+
+Regras obrigatórias:
+- Não invente informações que não estejam no texto.
+- Extraia as informações em português – Brasil.
+- Não utilize conhecimento externo.
+- Extraia eventos apenas do(s) paciente(s) do relato, nunca do perfil geral do medicamento.
+- Se um item não estiver explícito, responda "não informado".
+- Responda apenas com os campos acima, um por linha, no formato "Campo: valor", sem texto adicional.
